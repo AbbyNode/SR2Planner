@@ -63,12 +63,12 @@ const plotsDigsite = [
 ];
 
 const freeRange = [
-  { id: "frGu", top: "88%", left: "6%" },
-  { id: "frTp", top: "88%", left: "3%" },
-  { id: "frCv", top: "35%", left: "87%" },
-  { id: "frAw", top: "0%", left: "66%" },
-  { id: "frDn", top: "0%", left: "66%" },
-  { id: "frDs", top: "0%", left: "87%" },
+  { id: "frGu", top: "0%", left: "85%" },
+  { id: "frTp", top: "0%", left: "85%" },
+  { id: "frCv", top: "0%", left: "85%" },
+  { id: "frAw", top: "0%", left: "85%" },
+  { id: "frDn", top: "0%", left: "85%" },
+  { id: "frDs", top: "0%", left: "85%" },
 ];
 
 const areas = [
@@ -78,7 +78,7 @@ const areas = [
     areaMap: "./gully.png",
     color: "rgba(212, 128, 35, 1)",
     plots: plotsGully,
-    freeRange: [{ id: "frGu", top: "88%", left: "6%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frGu"),
   },
   {
     name: "The Tidepools",
@@ -86,7 +86,7 @@ const areas = [
     areaMap: "./tidepools.png",
     color: "rgba(241, 93, 155, 1)",
     plots: plotsTidepools,
-    freeRange: [{ id: "frTp", top: "88%", left: "3%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frTp"),
   },
   {
     name: "The Conservatory",
@@ -94,7 +94,7 @@ const areas = [
     areaMap: "./conservatory.png",
     color: "rgba(5, 92, 163, 1)",
     plots: plotsConservatory,
-    freeRange: [{ id: "frCv", top: "35%", left: "87%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frCv"),
   },
   {
     name: "The Archway",
@@ -102,7 +102,7 @@ const areas = [
     areaMap: "./archway.png",
     color: "rgba(204, 212, 250, 1)",
     plots: plotsArchway,
-    freeRange: [{ id: "frAw", top: "0%", left: "66%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frAw"),
   },
   {
     name: "The Den",
@@ -110,7 +110,7 @@ const areas = [
     areaMap: "./den.png",
     color: "rgba(123, 104, 255, 1)",
     plots: plotsDen,
-    freeRange: [{ id: "frDn", top: "0%", left: "66%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frDn"),
   },
   {
     name: "The Digsite",
@@ -118,7 +118,7 @@ const areas = [
     areaMap: "./digsite.png",
     color: "rgba(145, 126, 171, 1)",
     plots: plotsDigsite,
-    freeRange: [{ id: "frDs", top: "0%", left: "87%" }],
+    freeRange: freeRange.filter(fr => fr.id === "frDs"),
   },
 ];
 
