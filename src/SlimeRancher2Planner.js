@@ -10,7 +10,7 @@ import FavFoods from "./components/util/FavFoods";
 import Divider from "@mui/material/Divider";
 
 export default function SlimeRancher2Planner() {
-  const [mode, setMode] = React.useState("light");
+  const [mode, setMode] = React.useState("dark");
   const defaultTheme = createTheme({ palette: { mode } });
 
   const toggleColorMode = () => {
