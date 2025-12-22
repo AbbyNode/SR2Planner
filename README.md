@@ -1,5 +1,6 @@
-# SLIME RANCHER 2 PLANNER
+# Fork of SLIME RANCHER 2 PLANNER
 
-This is a hobby project. I do not make any money off of it. I do not own Slime Rancher 2.
+Changes made:
 
-The planner can be accessed here: https://sr2planner.github.io/SR2Planner/
+* Containerized the application
+* Plot positioning is now relative to the parent area, not to the whole page

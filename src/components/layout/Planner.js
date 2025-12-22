@@ -8,65 +8,67 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 
 
+// Relative coordinates (%) within each area card
 const plotsGully = [
-  { id: "gu1", top: 140, left: 640 },
-  { id: "gu2", top: 210, left: 520 },
-  { id: "gu3", top: 210, left: 600 },
-  { id: "gu4", top: 225, left: 715 },
-  { id: "gu5", top: 350, left: 640 },
+  { id: "gu1", top: "35%", left: "40%" },
+  { id: "gu2", top: "53%", left: "6%" },
+  { id: "gu3", top: "53%", left: "27%" },
+  { id: "gu4", top: "57%", left: "65%" },
+  { id: "gu5", top: "88%", left: "40%" },
 ];
 
 const plotsTidepools = [
-  { id: "tp1", top: 140, left: 890 },
-  { id: "tp2", top: 150, left: 1000 },
-  { id: "tp3", top: 260, left: 950 },
-  { id: "tp4", top: 260, left: 1015 },
-  { id: "tp5", top: 350, left: 1000 },
+  { id: "tp1", top: "35%", left: "31%" },
+  { id: "tp2", top: "38%", left: "78%" },
+  { id: "tp3", top: "65%", left: "51%" },
+  { id: "tp4", top: "65%", left: "74%" },
+  { id: "tp5", top: "88%", left: "78%" },
 ];
 
 const plotsConservatory = [
-  { id: "cv1", top: 140, left: 1180 },
-  { id: "cv2", top: 140, left: 1235 },
-  { id: "cv3", top: 295, left: 1390 },
-  { id: "cv4", top: 350, left: 1390 },
-  { id: "cv5", top: 295, left: 1235 },
-  { id: "cv6", top: 350, left: 1180 },
-  { id: "cv7", top: 350, left: 1235 },
-  { id: "cv8", top: 350, left: 1290 },
+  { id: "cv1", top: "35%", left: "10%" },
+  { id: "cv2", top: "35%", left: "29%" },
+  { id: "cv3", top: "74%", left: "87%" },
+  { id: "cv4", top: "88%", left: "87%" },
+  { id: "cv5", top: "74%", left: "29%" },
+  { id: "cv6", top: "88%", left: "10%" },
+  { id: "cv7", top: "88%", left: "29%" },
+  { id: "cv8", top: "88%", left: "48%" },
 ];
 
 const plotsArchway = [
-  { id: "aw1", top: 557, left: 570 },
-  { id: "aw2", top: 685, left: 520 },
-  { id: "aw3", top: 590, left: 652 },
-  { id: "aw4", top: 645, left: 718 },
-  { id: "aw5", top: 715, left: 700 },
+  { id: "aw1", top: "20%", left: "17%" },
+  { id: "aw2", top: "100%", left: "0%" },
+  { id: "aw3", top: "40%", left: "44%" },
+  { id: "aw4", top: "67%", left: "66%" },
+  { id: "aw5", top: "115%", left: "60%" },
 ];
 
 const plotsDen = [
-  { id: "dn1", top: 608, left: 858 },
-  { id: "dn2", top: 582, left: 915 },
-  { id: "dn3", top: 690, left: 897 },
-  { id: "dn4", top: 692, left: 960 },
-  { id: "dn5", top: 667, left: 1046 },
+  { id: "dn1", top: "51%", left: "3%" },
+  { id: "dn2", top: "36%", left: "19%" },
+  { id: "dn3", top: "102%", left: "13%" },
+  { id: "dn4", top: "103%", left: "35%" },
+  { id: "dn5", top: "87%", left: "66%" },
 ];
 
 const plotsDigsite = [
-  { id: "ds1", top: 525, left: 1275 },
-  { id: "ds2", top: 657, left: 1262 },
-  { id: "ds3", top: 710, left: 1262 },
-  { id: "ds4", top: 748, left: 1315 },
+  { id: "ds1", top: "0%", left: "8%" },
+  { id: "ds2", top: "82%", left: "3%" },
+  { id: "ds3", top: "114%", left: "3%" },
+  { id: "ds4", top: "138%", left: "18%" },
 ];
 
 const freeRange = [
-  { id: "frGu", top: 350, left: 520 },
-  { id: "frTp", top: 350, left: 858 },
-  { id: "frCv", top: 140, left: 1395 },
-  { id: "frAw", top: 525, left: 718 },
-  { id: "frDn", top: 525, left: 1046 },
-  { id: "frDs", top: 525, left: 1395 },
+  { id: "frGu", top: "88%", left: "6%" },
+  { id: "frTp", top: "88%", left: "3%" },
+  { id: "frCv", top: "35%", left: "87%" },
+  { id: "frAw", top: "0%", left: "66%" },
+  { id: "frDn", top: "0%", left: "66%" },
+  { id: "frDs", top: "0%", left: "87%" },
 ];
 
 const areas = [
@@ -75,36 +77,48 @@ const areas = [
     image: "areas/gully.png",
     areaMap: "./gully.png",
     color: "rgba(212, 128, 35, 1)",
+    plots: plotsGully,
+    freeRange: [{ id: "frGu", top: "88%", left: "6%" }],
   },
   {
     name: "The Tidepools",
     image: "areas/tidepools.png",
     areaMap: "./tidepools.png",
     color: "rgba(241, 93, 155, 1)",
+    plots: plotsTidepools,
+    freeRange: [{ id: "frTp", top: "88%", left: "3%" }],
   },
   {
     name: "The Conservatory",
     image: "areas/conservatory.png",
     areaMap: "./conservatory.png",
     color: "rgba(5, 92, 163, 1)",
+    plots: plotsConservatory,
+    freeRange: [{ id: "frCv", top: "35%", left: "87%" }],
   },
   {
     name: "The Archway",
     image: "areas/archway.png",
     areaMap: "./archway.png",
     color: "rgba(204, 212, 250, 1)",
+    plots: plotsArchway,
+    freeRange: [{ id: "frAw", top: "0%", left: "66%" }],
   },
   {
     name: "The Den",
     image: "areas/den.png",
     areaMap: "./den.png",
     color: "rgba(123, 104, 255, 1)",
+    plots: plotsDen,
+    freeRange: [{ id: "frDn", top: "0%", left: "66%" }],
   },
   {
     name: "The Digsite",
     image: "areas/digsite.png",
     areaMap: "./digsite.png",
     color: "rgba(145, 126, 171, 1)",
+    plots: plotsDigsite,
+    freeRange: [{ id: "frDs", top: "0%", left: "87%" }],
   },
 ];
 
@@ -129,7 +143,7 @@ const loadFromLocalStorage = () => {
 };
 
 
-const AreaCard = ({ area, index }) => (
+const AreaCard = ({ area, index, plotPlans, updatePlotPlan }) => (
   <Grid item xs={4} key={area.name}>
     <Card>
       <CardContent
@@ -138,6 +152,7 @@ const AreaCard = ({ area, index }) => (
           flexDirection: "column",
           background: area.color,
           pb: index === 0 ? "0px" : undefined,
+          position: "relative",
         }}
       >
         <Container sx={{
@@ -165,18 +180,44 @@ const AreaCard = ({ area, index }) => (
             {area.name}
           </Typography>
         </Container>
-        <CardMedia
-          component="img"
-          alt={`${area.name} area map`}
-          sx={{ 
-            padding: "0", 
-            width: "300px", 
-            objectFit: "contain", 
+        <Box
+          sx={{
+            position: "relative",
+            width: "300px",
             alignSelf: index === 0 ? "center" : undefined,
-            marginRight: index === 0 ? undefined : "10px" 
+            marginRight: index === 0 ? undefined : "10px",
           }}
-          image={require(`${area.areaMap}`)}
-        />
+        >
+          <CardMedia
+            component="img"
+            alt={`${area.name} area map`}
+            sx={{ 
+              padding: "0", 
+              width: "100%", 
+              objectFit: "contain",
+              display: "block",
+            }}
+            image={require(`${area.areaMap}`)}
+          />
+          {/* Render plots for this area */}
+          {area.plots.map((plot) => (
+            <Plot 
+              key={plot.id} 
+              plot={plot} 
+              savedPlan={plotPlans[plot.id]}
+              onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
+            />
+          ))}
+          {/* Render free range for this area */}
+          {area.freeRange.map((plot) => (
+            <FreeRange 
+              key={plot.id} 
+              plot={plot} 
+              savedPlan={plotPlans[plot.id]}
+              onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
+            />
+          ))}
+        </Box>
       </CardContent>
     </Card>
   </Grid>
@@ -204,11 +245,9 @@ export default function Planner() {
     }));
   };
 
-
   return (
     <div>
-
-      {/* Area Cards */}
+      {/* Area Cards with embedded plots */}
       <div>
         <Grid
           container
@@ -218,68 +257,16 @@ export default function Planner() {
           }}
         >
           {areas.map((area, index) => (
-            <AreaCard key={area.name} area={area} index={index} />
+            <AreaCard 
+              key={area.name} 
+              area={area} 
+              index={index} 
+              plotPlans={plotPlans}
+              updatePlotPlan={updatePlotPlan}
+            />
           ))}
         </Grid>
       </div>
-
-      {/* Plot Components */}
-      {plotsGully.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {plotsTidepools.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {plotsConservatory.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {plotsArchway.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {plotsDen.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {plotsDigsite.map((plot) => (
-        <Plot 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
-      {freeRange.map((plot) => (
-        <FreeRange 
-          key={plot.id} 
-          plot={plot} 
-          savedPlan={plotPlans[plot.id]}
-          onPlanUpdate={(planData) => updatePlotPlan(plot.id, planData)}
-        />
-      ))}
     </div>
   );
 }
