@@ -60,7 +60,7 @@ export default function SlimeRancher2Planner() {
               width: "auto"
             }}
           >
-      <img src={require(`./mapOverview.png`)} alt="Slime Rancher 2 Conservatory map" height="790px"></img>
+      <img src={`${process.env.PUBLIC_URL}/images/mapOverview.png`} alt="Slime Rancher 2 Conservatory map" height="790px" />
           </Container>
           <Divider orientation="vertical" flexItem />
           <Container
