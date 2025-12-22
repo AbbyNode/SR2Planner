@@ -10,56 +10,54 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 
-
-// Relative coordinates (%) within each area card
 const plotsGully = [
-  { id: "gu1", top: "35%", left: "40%" },
-  { id: "gu2", top: "53%", left: "6%" },
-  { id: "gu3", top: "53%", left: "27%" },
-  { id: "gu4", top: "57%", left: "65%" },
-  { id: "gu5", top: "88%", left: "40%" },
+  { id: "gu1", top: "5%", left: "50%" },
+  { id: "gu2", top: "30%", left: "10%" },
+  { id: "gu3", top: "30%", left: "35%" },
+  { id: "gu4", top: "35%", left: "75%" },
+  { id: "gu5", top: "75%", left: "50%" },
 ];
 
 const plotsTidepools = [
-  { id: "tp1", top: "35%", left: "31%" },
-  { id: "tp2", top: "38%", left: "78%" },
-  { id: "tp3", top: "65%", left: "51%" },
-  { id: "tp4", top: "65%", left: "74%" },
-  { id: "tp5", top: "88%", left: "78%" },
+  { id: "tp1", top: "10%", left: "35%" },
+  { id: "tp2", top: "10%", left: "75%" },
+  { id: "tp3", top: "40%", left: "50%" },
+  { id: "tp4", top: "40%", left: "70%" },
+  { id: "tp5", top: "75%", left: "75%" },
 ];
 
 const plotsConservatory = [
-  { id: "cv1", top: "35%", left: "10%" },
-  { id: "cv2", top: "35%", left: "29%" },
-  { id: "cv3", top: "74%", left: "87%" },
-  { id: "cv4", top: "88%", left: "87%" },
-  { id: "cv5", top: "74%", left: "29%" },
-  { id: "cv6", top: "88%", left: "10%" },
-  { id: "cv7", top: "88%", left: "29%" },
-  { id: "cv8", top: "88%", left: "48%" },
+  { id: "cv1", top: "10%", left: "15%" },
+  { id: "cv2", top: "10%", left: "30%" },
+  { id: "cv3", top: "55%", left: "85%" },
+  { id: "cv4", top: "75%", left: "85%" },
+  { id: "cv5", top: "55%", left: "30%" },
+  { id: "cv6", top: "75%", left: "15%" },
+  { id: "cv7", top: "75%", left: "30%" },
+  { id: "cv8", top: "75%", left: "50%" },
 ];
 
 const plotsArchway = [
-  { id: "aw1", top: "20%", left: "17%" },
-  { id: "aw2", top: "100%", left: "0%" },
-  { id: "aw3", top: "40%", left: "44%" },
-  { id: "aw4", top: "67%", left: "66%" },
-  { id: "aw5", top: "115%", left: "60%" },
+  { id: "aw1", top: "10%", left: "25%" },
+  { id: "aw2", top: "75%", left: "10%" },
+  { id: "aw3", top: "30%", left: "50%" },
+  { id: "aw4", top: "55%", left: "70%" },
+  { id: "aw5", top: "75%", left: "65%" },
 ];
 
 const plotsDen = [
-  { id: "dn1", top: "51%", left: "3%" },
-  { id: "dn2", top: "36%", left: "19%" },
-  { id: "dn3", top: "102%", left: "13%" },
-  { id: "dn4", top: "103%", left: "35%" },
-  { id: "dn5", top: "87%", left: "66%" },
+  { id: "dn1", top: "35%", left: "10%" },
+  { id: "dn2", top: "20%", left: "25%" },
+  { id: "dn3", top: "75%", left: "20%" },
+  { id: "dn4", top: "75%", left: "40%" },
+  { id: "dn5", top: "65%", left: "70%" },
 ];
 
 const plotsDigsite = [
-  { id: "ds1", top: "0%", left: "8%" },
-  { id: "ds2", top: "82%", left: "3%" },
-  { id: "ds3", top: "114%", left: "3%" },
-  { id: "ds4", top: "138%", left: "18%" },
+  { id: "ds1", top: "5%", left: "20%" },
+  { id: "ds2", top: "60%", left: "15%" },
+  { id: "ds3", top: "75%", left: "15%" },
+  { id: "ds4", top: "90%", left: "25%" },
 ];
 
 const freeRange = [
