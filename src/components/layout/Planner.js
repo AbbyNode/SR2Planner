@@ -19,54 +19,54 @@ const plotsGully = [
 ];
 
 const plotsTidepools = [
-  { id: "tp1", top: "10%", left: "35%" },
-  { id: "tp2", top: "10%", left: "75%" },
-  { id: "tp3", top: "40%", left: "50%" },
-  { id: "tp4", top: "40%", left: "70%" },
-  { id: "tp5", top: "75%", left: "75%" },
+  { id: "tp1", top: "5%", left: "20%" },
+  { id: "tp2", top: "10%", left: "58%" },
+  { id: "tp3", top: "48%", left: "42%" },
+  { id: "tp4", top: "48%", left: "62%" },
+  { id: "tp5", top: "75%", left: "58%" },
 ];
 
 const plotsConservatory = [
-  { id: "cv1", top: "10%", left: "15%" },
-  { id: "cv2", top: "10%", left: "30%" },
-  { id: "cv3", top: "55%", left: "85%" },
-  { id: "cv4", top: "75%", left: "85%" },
-  { id: "cv5", top: "55%", left: "30%" },
-  { id: "cv6", top: "75%", left: "15%" },
-  { id: "cv7", top: "75%", left: "30%" },
-  { id: "cv8", top: "75%", left: "50%" },
+  { id: "cv1", top: "8%", left: "6%" },
+  { id: "cv2", top: "8%", left: "26%" },
+  { id: "cv3", top: "58%", left: "24%" },
+  { id: "cv4", top: "58%", left: "75%" },
+  { id: "cv5", top: "78%", left: "6%" },
+  { id: "cv6", top: "78%", left: "24%" },
+  { id: "cv7", top: "78%", left: "42%" },
+  { id: "cv8", top: "78%", left: "75%" },
 ];
 
 const plotsArchway = [
-  { id: "aw1", top: "10%", left: "25%" },
-  { id: "aw2", top: "75%", left: "10%" },
-  { id: "aw3", top: "30%", left: "50%" },
-  { id: "aw4", top: "55%", left: "70%" },
-  { id: "aw5", top: "75%", left: "65%" },
+  { id: "aw1", top: "15%", left: "25%" },
+  { id: "aw2", top: "26%", left: "52%" },
+  { id: "aw3", top: "45%", left: "75%" },
+  { id: "aw4", top: "58%", left: "8%" },
+  { id: "aw5", top: "68%", left: "68%" },
 ];
 
 const plotsDen = [
-  { id: "dn1", top: "35%", left: "10%" },
-  { id: "dn2", top: "20%", left: "25%" },
-  { id: "dn3", top: "75%", left: "20%" },
-  { id: "dn4", top: "75%", left: "40%" },
-  { id: "dn5", top: "65%", left: "70%" },
+  { id: "dn1", top: "24%", left: "30%" },
+  { id: "dn2", top: "32%", left: "10%" },
+  { id: "dn3", top: "52%", left: "72%" },
+  { id: "dn4", top: "60%", left: "24%" },
+  { id: "dn5", top: "60%", left: "44%" },
 ];
 
 const plotsDigsite = [
-  { id: "ds1", top: "5%", left: "20%" },
-  { id: "ds2", top: "60%", left: "15%" },
-  { id: "ds3", top: "75%", left: "15%" },
-  { id: "ds4", top: "90%", left: "25%" },
+  { id: "ds1", top: "5%", left: "38%" },
+  { id: "ds2", top: "48%", left: "35%" },
+  { id: "ds3", top: "65%", left: "35%" },
+  { id: "ds4", top: "82%", left: "48%" },
 ];
 
 const freeRange = [
-  { id: "frGu", top: "0%", left: "85%" },
-  { id: "frTp", top: "0%", left: "85%" },
-  { id: "frCv", top: "0%", left: "85%" },
-  { id: "frAw", top: "0%", left: "85%" },
-  { id: "frDn", top: "0%", left: "85%" },
-  { id: "frDs", top: "0%", left: "85%" },
+  { id: "frGu", top: "2%", left: "80%" },
+  { id: "frTp", top: "2%", left: "80%" },
+  { id: "frCv", top: "2%", left: "80%" },
+  { id: "frAw", top: "2%", left: "80%" },
+  { id: "frDn", top: "2%", left: "80%" },
+  { id: "frDs", top: "2%", left: "80%" },
 ];
 
 const areas = [
