@@ -138,9 +138,6 @@ export default function Planner() {
         <Grid
           container
           spacing={1}
-          sx={{
-            width: "1000px",
-          }}
         >
           {areas.map((area) => (
             <AreaCard 
