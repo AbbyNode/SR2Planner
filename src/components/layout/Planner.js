@@ -61,12 +61,12 @@ const plotsDigsite = [
 ];
 
 const freeRange = [
-  { id: "frGu", top: "2%", left: "80%" },
-  { id: "frTp", top: "2%", left: "80%" },
-  { id: "frCv", top: "2%", left: "80%" },
-  { id: "frAw", top: "2%", left: "80%" },
-  { id: "frDn", top: "2%", left: "80%" },
-  { id: "frDs", top: "2%", left: "80%" },
+  { id: "frGu", top: "4%", left: "80%" },
+  { id: "frTp", top: "4%", left: "80%" },
+  { id: "frCv", top: "4%", left: "80%" },
+  { id: "frAw", top: "4%", left: "80%" },
+  { id: "frDn", top: "4%", left: "80%" },
+  { id: "frDs", top: "4%", left: "80%" },
 ];
 
 const areas = [
