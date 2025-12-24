@@ -30,6 +30,8 @@ jobs:
           node-version: '18'
           cache: 'npm'
 
+      # Note: Using npm install instead of npm ci due to package-lock.json compatibility issues
+      # TODO: Consider regenerating package-lock.json with npm ci once dependencies are updated
       - name: Install dependencies
         run: npm install
 

@@ -2,7 +2,7 @@
     "name": "sr2-planner",
     "version": "5.0.0",
     "private": true,
-    "homepage": "http://SR2Planner.github.io/SR2Planner",
+    "homepage": "https://SR2Planner.github.io/SR2Planner",
     "dependencies": {
         "@emotion/react": "latest",
         "@emotion/styled": "latest",

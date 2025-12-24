@@ -35,4 +35,4 @@ This uses the `gh-pages` package to deploy the build folder directly.
 ### Viewing Your Site
 
 After deployment completes, your site will be available at:
-- http://SR2Planner.github.io/SR2Planner (or your configured homepage URL)
+- https://SR2Planner.github.io/SR2Planner (or your configured homepage URL)
