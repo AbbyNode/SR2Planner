@@ -32,7 +32,7 @@ export default function Help() {
   return (
     <div>
       <Button color="text.secondary" variant="body2" onClick={handleOpen}>
-        Need Help?
+        Info
       </Button>
       <Modal
         open={open}
@@ -42,21 +42,14 @@ export default function Help() {
       >
         <Box sx={style}>
           <Typography variant="body2" fontWeight={600}  paddingLeft={1}>
-            PLEASE BE AWARE THAT THIS PROJECT IS A WORK IN PROGRESS IN ITS VERY EARLY STAGES!
+            This project is a fork.
           </Typography>
           <Divider />
           <br />
           <Typography>
-            There are a lot of features still missing, that I am planning to add whenever I find the
-            time to do so, like e.g. better visuals, being able to export and import your plan, ...
-          </Typography>
-          <br />
-          <Typography>
-            If you noticed a bug, have a feature request, or have just a general question, please{" "}
-            <Link href="https://github.com/SR2Planner/SR2Planner/issues/new?assignees=SR2Planner&labels=new&projects=SR2Planner%2F1&template=HELP_REQUEST.yml&title=Help+Request%3A+">
-              open a help request here
-            </Link>
-            or send an email to slimerancher2planner@gmail.com.
+            This fork: https://github.com/AbbyNode/SR2Planner
+            <br />
+            Original: https://github.com/SR2Planner/SR2Planner
           </Typography>
         </Box>
       </Modal>
