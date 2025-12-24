@@ -40,7 +40,6 @@ const AreaCard = ({ area, index, plotPlans, updatePlotPlan }) => (
           display: "flex",
           flexDirection: "column",
           background: area.color,
-          pb: index === 0 ? "0px" : undefined,
           position: "relative",
         }}
       >
@@ -72,9 +71,7 @@ const AreaCard = ({ area, index, plotPlans, updatePlotPlan }) => (
         <Box
           sx={{
             position: "relative",
-            width: "300px",
-            alignSelf: index === 0 ? "center" : undefined,
-            marginRight: index === 0 ? undefined : "10px",
+            width: "300px"
           }}
         >
           <CardMedia
@@ -145,11 +142,10 @@ export default function Planner() {
             width: "1000px",
           }}
         >
-          {areas.map((area, index) => (
+          {areas.map((area) => (
             <AreaCard 
               key={area.name} 
-              area={area} 
-              index={index} 
+              area={area}
               plotPlans={plotPlans}
               updatePlotPlan={updatePlotPlan}
             />
