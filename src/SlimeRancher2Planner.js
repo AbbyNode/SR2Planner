@@ -52,15 +52,15 @@ export default function SlimeRancher2Planner() {
               pt: "60px",
               pb: "15px",
               pl: "0px",
-              pr:"0px",
+              pr: "0px",
               margin: 0,
               maxHeight: "100%",
-                flexGrow:0,
+              flexGrow: 0,
               alignItems: "center",
               width: "auto"
             }}
           >
-      <img src={`${process.env.PUBLIC_URL}/images/mapOverview.png`} alt="Slime Rancher 2 Conservatory map" height="790px" />
+            <img src={`${process.env.PUBLIC_URL}/images/mapOverview.png`} alt="Slime Rancher 2 Conservatory map" height="790px" />
           </Container>
           <Divider orientation="vertical" flexItem />
           <Container
@@ -80,12 +80,12 @@ export default function SlimeRancher2Planner() {
           </Container>
           <Divider orientation="vertical" flexItem />
           <Container
-width="50px"
+            width="50px"
             sx={{ pt: "60px", pb: "15px", pl: "10px", pr: "10px", margin: 0, width: "150px" }}
           >
 
-                        <FavFoods />
-                      </Container>
+            <FavFoods />
+          </Container>
         </Box>
       </Box>
     </ThemeProvider>
