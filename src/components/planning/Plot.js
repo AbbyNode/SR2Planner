@@ -57,6 +57,7 @@ const corralSlimeTypes = [
   { name: "Flutter Slime", image: "slimes/flutter.png" },
   { name: "Honey Slime", image: "slimes/honey.png" },
   { name: "Hunter Slime", image: "slimes/hunter.png" },
+  { name: "Hyper Slime", image: "slimes/hyper.png" },
   { name: "Phosphor Slime", image: "slimes/phosphor.png" },
   { name: "Pink Slime", image: "slimes/pink.png" },
   { name: "Ringtail Slime", image: "slimes/ringtail.png" },
@@ -90,6 +91,7 @@ const fruitTypes = [
   { name: "Pomegranite", image: "fruits/pomegranite.png" },
   { name: "Polaricherry", image: "fruits/polaricherry.png" },
   { name: "Prickle Pear", image: "fruits/pricklePear.png" },
+  { name: "Turbo Tater", image: "fruits/turboTater.png" },
   { name: "None", image: "placeholder.png" },
 ];
 
