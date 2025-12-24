@@ -73,7 +73,7 @@ const areas = [
   {
     name: "The Gully",
     image: "areas/gully.png",
-    areaMap: "./gully.png",
+    areaMap: "areas/gully.png",
     color: "rgba(212, 128, 35, 1)",
     plots: plotsGully,
     freeRange: freeRange.filter(fr => fr.id === "frGu"),
@@ -81,7 +81,7 @@ const areas = [
   {
     name: "The Tidepools",
     image: "areas/tidepools.png",
-    areaMap: "./tidepools.png",
+    areaMap: "areas/tidepools.png",
     color: "rgba(241, 93, 155, 1)",
     plots: plotsTidepools,
     freeRange: freeRange.filter(fr => fr.id === "frTp"),
@@ -89,7 +89,7 @@ const areas = [
   {
     name: "The Conservatory",
     image: "areas/conservatory.png",
-    areaMap: "./conservatory.png",
+    areaMap: "areas/conservatory.png",
     color: "rgba(5, 92, 163, 1)",
     plots: plotsConservatory,
     freeRange: freeRange.filter(fr => fr.id === "frCv"),
@@ -97,7 +97,7 @@ const areas = [
   {
     name: "The Archway",
     image: "areas/archway.png",
-    areaMap: "./archway.png",
+    areaMap: "areas/archway.png",
     color: "rgba(204, 212, 250, 1)",
     plots: plotsArchway,
     freeRange: freeRange.filter(fr => fr.id === "frAw"),
@@ -105,7 +105,7 @@ const areas = [
   {
     name: "The Den",
     image: "areas/den.png",
-    areaMap: "./den.png",
+    areaMap: "areas/den.png",
     color: "rgba(123, 104, 255, 1)",
     plots: plotsDen,
     freeRange: freeRange.filter(fr => fr.id === "frDn"),
@@ -113,7 +113,7 @@ const areas = [
   {
     name: "The Digsite",
     image: "areas/digsite.png",
-    areaMap: "./digsite.png",
+    areaMap: "areas/digsite.png",
     color: "rgba(145, 126, 171, 1)",
     plots: plotsDigsite,
     freeRange: freeRange.filter(fr => fr.id === "frDs"),
@@ -195,7 +195,7 @@ const AreaCard = ({ area, index, plotPlans, updatePlotPlan }) => (
               objectFit: "contain",
               display: "block",
             }}
-            image={require(`${area.areaMap}`)}
+            image={require(`../../../public/images/${area.areaMap}`)}
           />
           {/* Render plots for this area */}
           {area.plots.map((plot) => (
