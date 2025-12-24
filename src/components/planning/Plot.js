@@ -11,6 +11,14 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import {
+  getCorralSlimes,
+  getCoopTypes,
+  getFruitTypes,
+  getVeggieTypes,
+  getPondSlimes,
+  getIncineratorSlimes,
+} from "../../data/gameData";
 
 const style = {
   position: "absolute",
@@ -47,87 +55,21 @@ const plotTypes = [
   { name: "Empty", image: "placeholder.png" },
 ];
 
-const corralSlimeTypes = [
-  { name: "Angler Slime", image: "slimes/angler.png" },
-  { name: "Batty Slime", image: "slimes/batty.png" },
-  { name: "Boom Slime", image: "slimes/boom.png" },
-  { name: "Cotton Slime", image: "slimes/cotton.png" },
-  { name: "Crystal Slime", image: "slimes/crystal.png" },
-  { name: "Dervish Slime", image: "slimes/dervish.png" },
-  { name: "Flutter Slime", image: "slimes/flutter.png" },
-  { name: "Honey Slime", image: "slimes/honey.png" },
-  { name: "Hunter Slime", image: "slimes/hunter.png" },
-  { name: "Hyper Slime", image: "slimes/hyper.png" },
-  { name: "Phosphor Slime", image: "slimes/phosphor.png" },
-  { name: "Pink Slime", image: "slimes/pink.png" },
-  { name: "Ringtail Slime", image: "slimes/ringtail.png" },
-  { name: "Rock Slime", image: "slimes/rock.png" },
-  { name: "Saber Slime", image: "slimes/saber.png" },
-  { name: "Sloomber Slime", image: "slimes/sloomber.png" },
-  { name: "Tabby Slime", image: "slimes/tabby.png" },
-  { name: "Tangle Slime", image: "slimes/tangle.png" },
-  { name: "Twin Slime", image: "slimes/twin.png" },
-  { name: "Yolky Slime", image: "slimes/yolky.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
-const coopTypes = [
-  { name: "Briar Hen", image: "meats/briarHen.png" },
-  { name: "Candied Hen", image: "meats/candiedHen.png" },
-  { name: "Hen Hen", image: "meats/henHen.png" },
-  { name: "Painted Hen", image: "meats/paintedHen.png" },
-  { name: "Sea Hen", image: "meats/seaHen.png" },
-  { name: "Stony Hen", image: "meats/stonyHen.png" },
-  { name: "Thundercluck", image: "meats/thundercluck.png" },
-  { name: "Mixed Meats", image: "meats/mixedMeats.png" },
-  { name: "Yolky Slime", image: "slimes/yolky.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
-const fruitTypes = [
-  { name: "Cuberry", image: "fruits/cuberry.png" },
-  { name: "Mint Mango", image: "fruits/mintMango.png" },
-  { name: "Pogofruit", image: "fruits/pogofruit.png" },
-  { name: "Pomegranite", image: "fruits/pomegranite.png" },
-  { name: "Polaricherry", image: "fruits/polaricherry.png" },
-  { name: "Prickle Pear", image: "fruits/pricklePear.png" },
-  { name: "Turbo Tater", image: "fruits/turboTater.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
-const veggieTypes = [
-  { name: "Carrot", image: "veggies/carrot.png" },
-  { name: "Heart Beat", image: "veggies/heartBeat.png" },
-  { name: "Odd Onion", image: "veggies/oddOnion.png" },
-  { name: "Water Lettuce", image: "veggies/waterLettuce.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
-const incineratorSlimeTypes = [
-  { name: "Fire", image: "slimes/fire.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
-const pondSlimeTypes = [
-  { name: "Puddle", image: "slimes/puddle.png" },
-  { name: "None", image: "placeholder.png" },
-];
-
 // Helper function to get content options based on plot type
 const getContentOptions = (plotTypeName) => {
   switch (plotTypeName) {
     case "Corral":
-      return corralSlimeTypes;
+      return getCorralSlimes();
     case "Coop":
-      return coopTypes;
+      return getCoopTypes();
     case "Fruit Tree":
-      return fruitTypes;
+      return getFruitTypes();
     case "Veggie Patch":
-      return veggieTypes;
+      return getVeggieTypes();
     case "Pond":
-      return pondSlimeTypes;
+      return getPondSlimes();
     case "Incinerator":
-      return incineratorSlimeTypes;
+      return getIncineratorSlimes();
     case "Silo":
       return [{ name: "Storage", image: "placeholder.png" }];
     case "Empty":

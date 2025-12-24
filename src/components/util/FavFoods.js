@@ -6,123 +6,35 @@ import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Typography } from "@mui/material";
+import { SLIMES, FOOD_TYPES, getSlimesByFoodType } from "../../data/gameData";
 
-const rowsFruit = [
-  {
-    slime: "Phosphor",
-    slimeImage: "slimes/phosphor.png",
-    food: "Cuberry",
-    foodImage: "fruits/cuberry.png",
-  },
-  {
-    slime: "Honey",
-    slimeImage: "slimes/honey.png",
-    food: "Mint Mango",
-    foodImage: "fruits/mintMango.png",
-  },
-  {
-    slime: "Dervish",
-    slimeImage: "slimes/dervish.png",
-    food: "Prickle Pear",
-    foodImage: "fruits/pricklePear.png",
-  },
-  {
-    slime: "Batty",
-    slimeImage: "slimes/batty.png",
-    food: "Pomegranite",
-    foodImage: "fruits/pomegranite.png",
-  },
-  {
-    slime: "Twin",
-    slimeImage: "slimes/twin.png",
-    food: "Polaricherry",
-    foodImage: "fruits/polaricherry.png",
-  },
-  {
-    slime: "Hyper",
-    slimeImage: "slimes/hyper.png",
-    food: "turboTater",
-    foodImage: "fruits/turboTater.png",
-  },
-];
-const rowsVeggie = [
-  {
-    slime: "Rock",
-    slimeImage: "slimes/rock.png",
-    food: "Heart Beat",
-    foodImage: "veggies/heartBeat.png",
-  },
-  {
-    slime: "Crystal",
-    slimeImage: "slimes/crystal.png",
-    food: "Odd Onion",
-    foodImage: "veggies/oddOnion.png",
-  },
-  {
-    slime: "Cotton",
-    slimeImage: "slimes/cotton.png",
-    food: "Water Lettuce",
-    foodImage: "veggies/waterLettuce.png",
-  },
-];
-const rowsMeat = [
-  {
-    slime: "Tabby",
-    slimeImage: "slimes/tabby.png",
-    food: "Stony Hen",
-    foodImage: "meats/stonyHen.png",
-  },
-  {
-    slime: "Boom",
-    slimeImage: "slimes/boom.png",
-    food: "Briar Hen",
-    foodImage: "meats/briarHen.png",
-  },
-  {
-    slime: "Angler",
-    slimeImage: "slimes/angler.png",
-    food: "Sea Hen",
-    foodImage: "meats/seaHen.png",
-  },
-  {
-    slime: "Tangle",
-    slimeImage: "slimes/tangle.png",
-    food: "Painted Hen",
-    foodImage: "meats/paintedHen.png",
-  },
-  {
-    slime: "Saber",
-    slimeImage: "slimes/saber.png",
-    food: "Thundercluck",
-    foodImage: "meats/thundercluck.png",
-  },
-  {
-    slime: "Sloomber",
-    slimeImage: "slimes/sloomber.png",
-    food: "Candied Hen",
-    foodImage: "meats/candiedHen.png",
-  },
-  {
-    slime: "Hunter",
-    slimeImage: "slimes/hunter.png",
-    food: "Roostro",
-    foodImage: "meats/roostro.png",
-  },
-];
-const rowsNoFav = [
-  { slime: "Pink", slimeImage: "slimes/pink.png", food: "None", foodImage: "other/mixed.png" },
-  { slime: "Ringtail", slimeImage: "slimes/ringtail.png", food: "None", foodImage: "other/mixed.png" },
-  { slime: "Puddle", slimeImage: "slimes/puddle.png", food: "None", foodImage: "other/water.png" },
-  { slime: "Fire", slimeImage: "slimes/fire.png", food: "None", foodImage: "other/ash.png" },
-  {
-    slime: "Flutter",
-    slimeImage: "slimes/flutter.png",
-    food: "Moondew Nectar",
-    foodImage: "other/moondewNectar.png",
-  },
-  { slime: "Yolky", slimeImage: "slimes/yolky.png", food: "None", foodImage: "other/none.png" },
+const rowsFruit = getSlimesByFoodType(FOOD_TYPES.FRUIT).map((slime) => ({
+  slime: slime.name,
+  slimeImage: slime.image,
+  food: slime.favoriteFood.name,
+  foodImage: slime.favoriteFood.image,
+}));
 
-];
+const rowsVeggie = getSlimesByFoodType(FOOD_TYPES.VEGGIE).map((slime) => ({
+  slime: slime.name,
+  slimeImage: slime.image,
+  food: slime.favoriteFood.name,
+  foodImage: slime.favoriteFood.image,
+}));
+
+const rowsMeat = getSlimesByFoodType(FOOD_TYPES.MEAT).map((slime) => ({
+  slime: slime.name,
+  slimeImage: slime.image,
+  food: slime.favoriteFood.name,
+  foodImage: slime.favoriteFood.image,
+}));
+
+const rowsNoFav = getSlimesByFoodType(FOOD_TYPES.OTHER).map((slime) => ({
+  slime: slime.name,
+  slimeImage: slime.image,
+  food: slime.favoriteFood.name,
+  foodImage: slime.favoriteFood.image,
+}));
 
 
 export default function FavFoods() {
