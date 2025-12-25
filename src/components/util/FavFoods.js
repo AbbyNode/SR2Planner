@@ -40,10 +40,10 @@ const rowsNoFav = getSlimesByFoodType(FOOD_TYPES.OTHER).map((slime) => ({
 export default function FavFoods() {
   return (
     <div>
-      <Typography variant="body2" align="center" sx={{"margin-bottom": "10px"}}>
+      <Typography variant="body2" align="center" sx={{"marginBottom": "10px"}}>
         Favorite Foods
       </Typography>
-      <TableContainer component={Paper} sx={{"margin-bottom": "5px"}}>
+      <TableContainer component={Paper} sx={{"marginBottom": "5px"}}>
         <Table size="small" aria-label="fav foods table" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
           <TableBody>
             {rowsFruit.map((row) => (
@@ -71,7 +71,7 @@ export default function FavFoods() {
           </TableBody>
         </Table>
       </TableContainer>
-      <TableContainer component={Paper} sx={{"margin-bottom": "5px"}}>
+      <TableContainer component={Paper} sx={{"marginBottom": "5px"}}>
       <Table size="small" aria-label="fav foods table" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
       <TableBody>
             {rowsVeggie.map((row) => (
@@ -99,7 +99,7 @@ export default function FavFoods() {
           </TableBody>
         </Table>
       </TableContainer>
-      <TableContainer component={Paper} sx={{"margin-bottom": "5px"}}>
+      <TableContainer component={Paper} sx={{"marginBottom": "5px"}}>
       <Table size="small" aria-label="fav foods table" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
       <TableBody>
             {rowsMeat.map((row) => (
@@ -127,7 +127,7 @@ export default function FavFoods() {
           </TableBody>
         </Table>
       </TableContainer>
-      <TableContainer component={Paper} sx={{"margin-bottom": "5px"}}>
+      <TableContainer component={Paper} sx={{"marginBottom": "5px"}}>
       <Table size="small" aria-label="fav foods table" sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
       <TableBody>
             {rowsNoFav.map((row) => (

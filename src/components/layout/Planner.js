@@ -132,23 +132,18 @@ export default function Planner() {
   };
 
   return (
-    <div>
-      {/* Area Cards with embedded plots */}
-      <div>
-        <Grid
-          container
-          spacing={1}
-        >
-          {areas.map((area) => (
-            <AreaCard 
-              key={area.name} 
-              area={area}
-              plotPlans={plotPlans}
-              updatePlotPlan={updatePlotPlan}
-            />
-          ))}
-        </Grid>
-      </div>
-    </div>
+    <Grid
+      container
+      spacing={1}
+    >
+      {areas.map((area) => (
+        <AreaCard 
+          key={area.name} 
+          area={area}
+          plotPlans={plotPlans}
+          updatePlotPlan={updatePlotPlan}
+        />
+      ))}
+    </Grid>
   );
 }

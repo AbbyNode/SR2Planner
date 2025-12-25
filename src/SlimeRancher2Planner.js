@@ -48,6 +48,7 @@ export default function SlimeRancher2Planner() {
           }}
         >
           <Container
+            disableGutters={true}
             sx={{
               pt: "60px",
               pb: "15px",
@@ -64,6 +65,7 @@ export default function SlimeRancher2Planner() {
           </Container>
           <Divider orientation="vertical" flexItem />
           <Container
+            disableGutters={true}
             sx={{
               pt: "60px",
               pb: "15px",
@@ -80,8 +82,15 @@ export default function SlimeRancher2Planner() {
           </Container>
           <Divider orientation="vertical" flexItem />
           <Container
-            width="50px"
-            sx={{ pt: "60px", pb: "15px", pl: "10px", pr: "10px", margin: 0, width: "150px" }}
+            disableGutters={true}
+            sx={{
+              pt: "60px",
+              pb: "15px",
+              pl: "10px",
+              pr: "10px",
+              margin: 0,
+              width: "150px"
+            }}
           >
 
             <FavFoods />
